@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyAmbulensi User</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="urlstring">aHR0cDovL3JlYWR5bWFkZXNjcmlwdC5vcmcvZGVtby9jYWJib29raW5nL3NpbmdsZWRvbWFpbi11c2VyLnBocA==</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="share_msg">Hi,I would like to share NXTrans Application which is used to book a Cab. Please download it from Google Play Store Free Here \n https://appdroidsolutions.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

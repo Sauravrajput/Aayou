@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:hint="Search topics"
+            android:textColor="#c8000000"
+            android:text="Faq's"
+            android:textSize="16dp"
+            android:layout_toLeftOf="@+id/img"
+            android:id="@+id/tvcat"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:tint="#c8000000"
+            android:src="@drawable/arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+</LinearLayout>

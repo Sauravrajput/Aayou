@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Fri Oct 19 17:29:17 IST 2018
+1.base=D\:\\naveen\\for Naveen\\naveen\\Ambulance App\\CabUser\\app\\build\\intermediates\\assets\\release
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=ASSET
+0.path=classes.dex
+0.set=DEX
+0.base=D\:\\naveen\\for Naveen\\naveen\\Ambulance App\\CabUser\\app\\build\\intermediates\\transforms\\dex\\release\\0
+1.path=fonts/agency_fb_bold.ttf

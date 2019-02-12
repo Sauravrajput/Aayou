@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_rate_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.scriptmall.cabuser.RateCardActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:tint="#5c5c5c"
+                        android:src="@drawable/cityscape"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/blue"
+                            android:text="Select city"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="3dp"
+                            android:background="@drawable/box">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/spincity"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="60dp">
+                    <include layout="@layout/ui_line_black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:tint="#5c5c5c"
+                        android:src="@drawable/noti"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/blue"
+                            android:text="Select category" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="3dp"
+                            android:background="@drawable/box">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/spincat"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <include layout="@layout/ui_line_black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/blue"
+                    android:text="Regular" />
+            </LinearLayout>
+
+            <include layout="@layout/ui_line_black"/>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="10dp"
+                android:background="#0fbababa"
+                android:layout_margin="10dp"
+                android:padding="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle_yello"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:id="@+id/rel_img1">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/noti"
+                            android:tint="#FFF"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/img"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toRightOf="@+id/rel_img1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Micro"
+                            android:textSize="16dp"
+                            android:textColor="#000000"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/cabtype"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maruti Alto,Datsun Go,Hyundai Eon"
+                            android:textSize="14dp"
+                            android:textColor="#be393939"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/seats"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#c0fafafa"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="10dp"
+                android:background="#0fbababa"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#0fbababa">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Total Fair"
+                        android:textSize="18dp"
+                        android:textColor="#de000000"
+                        android:background="#ffffff"
+                        android:paddingLeft="10dp"
+                        android:gravity="left|center"
+                        android:id="@+id/tvtotal_title"/>
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."-->
+                        <!--android:textSize="14dp"-->
+                        <!--android:textColor="#5c5c5c"-->
+                        <!--android:lineSpacingExtra="2.5dp"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:id="@+id/tvtotal_content"/>-->
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#c0fafafa"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="10dp"
+                android:background="#ffffff"
+                android:layout_margin="10dp"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:text="Poitn to point"
+                            android:textSize="16dp"
+                            android:textColor="#de000000"
+                            android:gravity="left|center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:text="USHs"
+                            android:lineSpacingExtra="2.5dp"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/ptpamt"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:text="Hourly Rental"
+                            android:textSize="16dp"
+                            android:textColor="#de000000"
+                            android:gravity="left|center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:text="USHs"
+                            android:lineSpacingExtra="2.5dp"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/rentamt"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:text="Outstation - Oneway"
+                            android:textSize="16dp"
+                            android:textColor="#de000000"
+                            android:gravity="left|center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:text="USHs"
+                            android:lineSpacingExtra="2.5dp"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/outamt"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:text="Outstation - Roundtrip"
+                            android:textSize="16dp"
+                            android:textColor="#de000000"
+                            android:gravity="left|center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:text="USHs"
+                            android:lineSpacingExtra="2.5dp"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/outroundamt"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:text="Waiting Charge\n(if Outstation)"
+                            android:textSize="16dp"
+                            android:textColor="#de000000"
+                            android:gravity="left|center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:text="USHs"
+                            android:lineSpacingExtra="2.5dp"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/outwaitingamt"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:text="Driver allowance\n(if Outstation)"
+                            android:textSize="16dp"
+                            android:textColor="#de000000"
+                            android:gravity="left|center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:text="USHs"
+                            android:lineSpacingExtra="2.5dp"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/driveramt"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

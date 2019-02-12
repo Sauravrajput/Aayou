@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\naveen\for Naveen\naveen\Ambulance App\CabUser\app\src\main\assets"><file name="fonts/agency_fb_bold.ttf" path="D:\naveen\for Naveen\naveen\Ambulance App\CabUser\app\src\main\assets\fonts\agency_fb_bold.ttf"/></source><source path="D:\naveen\for Naveen\naveen\Ambulance App\CabUser\app\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\naveen\for Naveen\naveen\Ambulance App\CabUser\app\src\release\assets"/></dataSet></merger>

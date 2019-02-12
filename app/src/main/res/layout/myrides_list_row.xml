@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="#ffffff">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/aa"
+            android:id="@+id/cab_img"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/rel1"
+            android:layout_toRightOf="@id/cab_img">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="23-11-2017 10.30AM"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/tvdate_time"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto . PHP20171124"
+                android:textSize="14dp"
+                android:textColor="#be393939"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/tvcab_rid"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:background="#ffffff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toLeftOf="@+id/v1">
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/circle_white"
+                    android:layout_gravity="center"
+                    android:tint="#03de16"
+                    android:textColor="#03de16"/>
+                <TextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="porur junction"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:background="#ffffff"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/v1">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/circle_white"
+                    android:tint="#c00"
+                    android:layout_gravity="center"
+                    android:textColor="#03de16"/>
+
+                <TextView
+                    android:id="@+id/autoCompleteTextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Cmbt bus stand"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/rel1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/img_cancel"
+                android:gravity="center"
+                android:id="@+id/driver_img"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/cancelled"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:id="@+id/img_cancel"
+                />
+
+            <TextView
+                android:id="@+id/tvstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:text="Scheduled"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:id="@+id/amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="Oneway Trip - \u20b9 100"
+            android:textColor="@color/green"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"/>
+    </RelativeLayout>
+
+    <include layout="@layout/ui_line_black"/>
+
+
+
+</LinearLayout>

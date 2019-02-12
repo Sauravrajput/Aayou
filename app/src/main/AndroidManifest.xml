@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.scriptmall.cabuser">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.scriptsmall.cabbookphp.permission.C2D_MESSAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/new_app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Register2Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Register3Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Register4Activity"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDrJlYmi86il9sTTZOrXTk8uGD5jkQr2LY" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="com.scriptmall.cabuser.FirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.scriptmall.cabuser.FirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.scriptmall.cabuser.ScriptsService"
+            android:enabled="true"
+            android:exported="true" />
+        <activity android:name=".ConfrimActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LaterConfrimActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".OutstationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RentalActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MyRidesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MyRidesCancelActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TrackingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EditprofileActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PasswordUpdateActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SupportActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SupportAnsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RateCardActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TrackOthersActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tracking2Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TrackerRideListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BillActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

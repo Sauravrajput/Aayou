@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.scriptmall.cabuser.Register3Activity"
+    android:background="#ffffff">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="#95000000"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/tv"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="25dp">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full name"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:layout_margin="10dp"
+                    android:id="@+id/etfname"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email (optional)"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:layout_margin="10dp"
+                    android:id="@+id/etmail"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="30dp">-->
+
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Got a refferal Code?"-->
+        <!--android:textSize="16dp"-->
+        <!--android:textColor="#000000"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:inputType="number"-->
+        <!--android:layout_margin="10dp"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Apply here."-->
+        <!--android:textSize="16dp"-->
+        <!--android:textColor="#0086ec"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:id="@+id/apply"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Refferal code"-->
+        <!--android:text=""-->
+        <!--android:textSize="16dp"-->
+        <!--android:textColor="#000000"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:inputType="number"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:id="@+id/etrefcode"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By registering, you are agreeing to"
+                android:textSize="16dp"
+                android:textColor="#c1000000"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Terms &amp; Conditions"
+                android:textSize="16dp"
+                android:textColor="#0086ec"
+                android:layout_gravity="center"
+                android:id="@+id/terms"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" register "
+        android:textSize="20dp"
+        android:textColor="#66000000"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:id="@+id/btn_nxt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/btn_nxt">
+        <include layout="@layout/ui_line_black"/>
+    </LinearLayout>
+
+</RelativeLayout>

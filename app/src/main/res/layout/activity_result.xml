@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.scriptmall.cabuser.ResultActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:orientation="vertical"
+            android:background="@drawable/circle_white"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_done"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ride Scheduled!"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your ride has been scheduled. We will send the details shortly. Check it in My Rides"
+            android:textSize="16dp"
+            android:textColor="#b9000000"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"/>
+
+        <include layout="@layout/ui_line_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Got it"
+            android:textSize="20dp"
+            android:textColor="#0086ec"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/start"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.scriptmall.cabuser.RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:text="We need your mobile number to book a ride"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <!--<ImageView
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/flag_other" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="+256"
+                android:textColor="#000000"
+                android:textSize="20dp" />-->
+            <Spinner
+                android:id="@+id/simpleSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/black"
+                android:layout_centerHorizontal="true"/>
+            <EditText
+                android:id="@+id/etnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:hint="Your number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_nxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff"
+        android:text="Next"
+        android:textColor="#66000000"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_nxt"
+        android:orientation="vertical">
+
+        <include layout="@layout/ui_line_black" />
+    </LinearLayout>
+
+</RelativeLayout>

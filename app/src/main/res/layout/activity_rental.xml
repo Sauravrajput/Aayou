@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rental"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.scriptmall.cabuser.RentalActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_above="@+id/relbottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="3dp"
+                    android:background="#ffffff"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toLeftOf="@+id/v1">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <!--<ImageView-->
+                        <!--android:layout_width="10dp"-->
+                        <!--android:layout_height="10dp"-->
+                        <!--android:gravity="left"-->
+                        <!--android:src="@drawable/circle_white"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:tint="#03de16"-->
+                        <!--android:textColor="#03de16"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14dp"
+                            android:textAllCaps="true"
+                            android:text="1. Pickup Location"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/autoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="No 10, porur, Chenai"
+                        android:layout_gravity="center"
+                        android:gravity="left|center"
+                        android:background="#ffffff"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+                    <include layout="@layout/ui_line_black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="vertical"
+                    android:background="#edecec"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+                    <include layout="@layout/ui_line_black"/>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5sp"
+                        android:id="@+id/lincab">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14dp"
+                            android:textAllCaps="true"
+                            android:text="2. Select Cab Type"
+                            android:layout_marginBottom="5dp"/>
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scrollbars="vertical" />
+
+                    </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/relbottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="vertical"
+                    android:background="#edecec"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+                    <include layout="@layout/ui_line_black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:layout_toLeftOf="@+id/view2"
+                    android:padding="5sp">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:tint="#5c5c5c"
+                        android:src="@drawable/ic_transaction_item"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:text="Pickup Time"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:text="Pickup Time"
+                        android:id="@+id/date_time"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+                    <include layout="@layout/ui_line_black"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:layout_toLeftOf="@+id/view2"
+                        android:padding="5sp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:tint="#5c5c5c"
+                            android:src="@drawable/ic_person_black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="16dp"
+                            android:textColor="#5c5c5c"
+                            android:text="Personal"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/view2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_centerVertical="true"
+                        android:textSize="16dp"
+                        android:textColor="#5c5c5c"
+                        android:text=""
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/view2"
+                        android:id="@+id/spinpay"/>
+                </RelativeLayout>
+                <Button
+                    android:text="Accept &amp; confirm"
+                    android:textSize="18dp"
+                    android:textColor="#FFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/book"
+                    android:background="@color/colorPrimary"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

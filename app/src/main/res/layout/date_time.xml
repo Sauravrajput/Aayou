@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Advance appointment"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:typeface="normal"
+            android:layout_margin="5dp"
+            android:layout_gravity="left"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:typeface="normal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/tvdate"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:typeface="normal"
+            android:layout_margin="5dp"
+            android:layout_gravity="left"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:typeface="normal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/tvtime"/>
+    </LinearLayout>
+
+        <Button
+            android:text="       ok       "
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/button" />
+
+
+
+
+</LinearLayout>
+
+
+</LinearLayout>

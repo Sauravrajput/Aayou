@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Estimated Fair Details"
+            android:id="@+id/tvtitle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:gravity="left"
+                android:textSize="16sp"
+                android:text="Base Fair"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:text="Includes 1 hrs 10 Km "
+                    android:id="@+id/tvinclude"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:layout_marginRight="15dp"
+                android:textSize="16sp"
+                android:text="\u20b9 199"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:textSize="16sp"
+                    android:text="Additional Km fairs"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:text="After first 10 Km"
+                    android:id="@+id/tvaddkm"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:layout_marginRight="15dp"
+                android:text="\u20b9 12"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:textSize="16sp"
+                    android:text="Additional ride time fair"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:text="After first 1 hours"
+                    android:id="@+id/tvaddtime"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:layout_marginRight="15dp"
+                android:text="\u20b9 2.5/min"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_marginBottom="10dp">
+            <include layout="@layout/ui_line_black"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

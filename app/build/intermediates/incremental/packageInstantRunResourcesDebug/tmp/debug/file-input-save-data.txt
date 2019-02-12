@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Fri Feb 01 12:10:46 IST 2019
+0.baseType=DIRECTORY
+0.base=D\:\\Saurav new projects\\Ambulance App\\CabUser\\app\\build\\intermediates\\assets\\debug
+0.path=fonts/agency_fb_bold.ttf
+0.set=ASSET
+count=1
